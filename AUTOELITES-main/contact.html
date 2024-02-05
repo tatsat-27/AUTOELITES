@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact-page</title>
+	<link rel="stylesheet" href="contactstyle.css">
+	<script src="login.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+	<header>
+		<h3 class="logo">AUTOELITES</h3>
+		<nav class="navigation">
+			<a href="starting.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="service.html">Services</a>
+			<a href="contact.html">Contact</a>
+			<a href="login.html"><button class="btnLogin-popup">Login</button></a>
+		</nav>
+	</header>
+	<div class="wrapper" style="word-wrap: break-word; margin-left: 20px;">
+		<div class="form-box login">
+			<h2 style="margin-bottom: 50px;">Contact Us</h2>
+
+			<h3 style="color: white;">
+				<img src="email.png" alt="" class="round" style="width: 30px;height: 30px; margin-top: 10px;">
+					sales@autoelites.com
+					<br>
+					The best way to get answer faster.
+					<br>
+				<br>
+				<img src="telephone-call.png" alt="" class="round" style="width: 30px;height: 30px;">
+				For Preowned Cars
+				<br>
+				(+91) 9999 9999 83
+				<br>
+				We are happy to help (10am to 10pm)
+				<br>
+				<br>
+				<img src="telephone-call.png" alt="" class="round" style="width: 30px;height: 30px;">
+				For Vintage & Classic Cars
+				<br>
+				(+91) 9999 9990 17
+				<br>
+				or email us at vintage@autoelites.com
+			</h3>
+
+		</div>
+
+	</div>
+
+
+	<div class="wrapper" style="word-wrap: break-word;">
+		<div class="form-box login">
+			<h2 style="margin-bottom: 50px;">Send us an e-mail</h2>
+			<form action="#">
+				<input type="text" placeholder="Your Name" style="height: 40px; margin-right: 50px;" id="n1" required>
+				<input type="text" placeholder="Location" style="height: 40px;" id="n2" required>
+				<br>
+				<br>
+				<input type="email" placeholder="E-mail" style="height: 40px;margin-right: 50px;" id="n3" required>
+				<input type="number" placeholder="Phone number" style="height: 40px;" id="n4" required>
+				<br>
+
+				<textarea placeholder="Write messiage" id="ta" required></textarea>
+				<br>
+				<br>
+				<button style="margin-left: 210px; width: 100px; height: 50px;" onclick="return val()">Send</button>
+
+			</form>
+
+		</div>
+
+	</div>
+	<script>
+		function val() {
+
+			const s1 = document.getElementById("n1").value;
+			const s2 = document.getElementById("n2").value;
+			const s3 = document.getElementById("n3").value;
+			const s4 = document.getElementById("n4").value;
+			const s5 = document.getElementById("ta").value;
+
+			console.log(s1)
+			if (s1.length > 0 & s2.length > 0 & s3.length > 0 & s4.length == 10 & s5.length > 0) {
+				alert("Message sent successfully.")
+			}
+			else {
+				alert("Please fill the details correctly.")
+			}
+
+		}
+	</script>
+	<header id = "head2">
+		<h2>
+			FOLLOW US ON  		
+		</h2>
+		<img src="instagram.png" class="round" style="width: 40px;height: 40px; align-content: center;">
+	</header>
+</body>
+
+</html>

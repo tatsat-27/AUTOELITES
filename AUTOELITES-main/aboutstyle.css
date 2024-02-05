@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Bruno Ace SC', cursive;
+}
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	min-width: 100vw;
+	background-position:center;
+	background:url('Mclaren.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	padding: 20px 100px;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	z-index:99;
+}
+.logo{
+	font-size:2.1em;
+	color:#ffffff;
+	user-select:none;
+}
+.navigation a{
+	 position: relative;
+	 font-size:1.1em;
+	 color: #fff;
+	 text-decoration:none;
+	 font-weight:500;
+	 margin-right:40px;
+}
+
+.navigation .btnLogin-popup{
+	 width:130px;
+	 height:50px;
+	 background:transparent;
+	 border: 2px solid #fff;
+	 outline:none;
+	 border-radius: 6px;
+	 cursor: pointer;
+	 font-size:1.1em;
+	 color:#fff;
+	 font-weight:500;
+	 transition: .5s;
+	 margin-right:40px;
+}
+.navigation .btnLogin-popup:hover{
+	 background: #fff;
+	 color: #162938;
+}
+
+.heading{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left:200px;
+}
+.heading h1{
+    font-size: 50px;
+    color: #1cbdbd;
+    margin: 0px 0px 0px;
+}
+.heading p{
+    font-size: 18px;
+    color:#666;
+    margin-bottom: 45px;
+}
+.container{
+    width: 80%;
+    margin: 20px;
+    padding:20px 20px;
+	padding-top: 100px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-content{
+    flex:1;
+}
+.about-content p{
+	width:900px;
+    font-size: 22px;
+    line-height: 2;
+    color: #ffffff;
+	margin-right: 100px;
+}
+#bottom-header{
+	color: #00ffff; 
+	margin-top:900px;
+	backdrop-filter: blur(6px);
+	box-shadow: 0 0 30px rgba(0,0,0,.5);
+	display:flex;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Bruno Ace SC', cursive;
+}
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background:url('mclaren_solus_gt_5-1920x1080.jpg')no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	padding: 20px 100px;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	z-index:99;
+}
+.logo{
+	font-size:2.1em;
+	color:#fff;
+	user-select:none;
+}
+ .navigation a{
+	 position: relative;
+	 font-size:1.1em;
+	 color: #fff;
+	 text-decoration:none;
+	 font-weight:500;
+	 margin-right:40px;
+ }
+ 
+ .navigation .btnLogin-popup{
+	 width:130px;
+	 height:50px;
+	 background:transparent;
+	 border: 2px solid #fff;
+	 outline:none;
+	 border-radius: 6px;
+	 cursor: pointer;
+	 font-size:1.1em;
+	 color:#fff;
+	 font-weight:500;
+	 transition: .5s;
+	 margin-right:40px;
+ }
+ .navigation .btnLogin-popup:hover{
+	 background: #fff;
+	 color: #162938;
+ }
+ 
+ .form-box h2{
+	 font-size:2.1em;
+	 color:#fff;
+	 text-align:center;
+ }
+ .btn{
+	 width: 100%;
+	 height: 45px;
+	 border:none;
+	 outline:none;
+	 border-radius:6px;
+	 cursor: pointer;
+	 font-size: 1em;
+	 font-weight: 500;
+ }
+.container{
+    width: 1000%;
+    height: 1000vh;
+}
+.nav{
+    height: 50px;
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul{
+   display: flex;
+   height: 50px;
+   align-items: center;
+   list-style: none;
+   margin: 0 70px;
+}
+
+.nav ul li{
+  padding: 0 15px;
+}
+.nav ul li:hover{
+     border-radius:10px ;
+     background-color: rgb(151, 48, 11);
+     cursor: pointer;
+     height: 40px;
+     align-items: center;
+     display: flex;
+     font-size: larger;
+}
+
+.explore{
+    margin: 30px 0;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore a{
+	text-decoration: none;
+}
+.box1{
+    width: 350px;
+    height: 350px;
+    margin: 0 20px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+	backdrop-filter: blur(6px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.box2{
+    width: 350px;
+    height: 350px;
+    margin: 0 20px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+	backdrop-filter: blur(6px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+
+.box p{
+   padding-bottom: 15px;
+}
+
+#box1{
+    background:transparent;
+}
+#box2{
+    background:transparent;
+}
+#box1:hover{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 5px;
+    font-size: larger;
+}
+#box2:hover{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 5px;
+    font-size: larger;
+}

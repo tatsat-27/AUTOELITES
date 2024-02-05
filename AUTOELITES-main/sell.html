@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sell-page</title>
+    <link rel="stylesheet" href="sellstyle.css">
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <script>
+        function p_no_len_val() {
+            let no = document.getElementById("n").value
+            let ma = document.getElementById("mail")
+            let c = 0;
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(ma.value)){
+                c = c + 1;
+            }
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(ma.value) != true){
+                alert("Enter a valid E-mail address.")
+                return (false)
+            }
+            
+
+            if (no.length != 10) {
+                alert("Enter a valid Phone Number.");
+                return (false)
+            }
+            if (no.length == 10){
+                c = c + 1
+            }
+
+            if( c  ==  2){
+                return(true)
+            }
+
+        }
+        
+    </script>
+    <header>
+        <h3 class="logo">AUTOELITES</h3>
+        <nav class="navigation">
+            <a href="starting.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html"><button class="btnLogin-popup">Login</button></a>
+        </nav>
+    </header>
+    <div class="wrapper-registration">
+        <div class="form-box register">
+            <h2>Enter your details</h2>
+            <form action="sell-reg.jsp" onsubmit="return p_no_len_val()" method = "GET">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name = "un" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="mail" name = "em" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    <input type="number" id="n" name = "nu" required>
+                    <label>Phone</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="car-sport"></ion-icon></span>
+                    <input type="text" name = "cno" required>
+                    <label>Car Number</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="calendar-clear"></ion-icon></span>
+                    <input type="date" name = "dt" required>
+                    <label>Appointment Date</label>
+                </div>
+                <div class="agree">
+                    <label><input type="checkbox" required> I agree to the terms & conditions</label>
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

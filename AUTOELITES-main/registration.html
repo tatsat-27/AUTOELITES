@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Login and Registration</title>
+<link rel="stylesheet" href="reg.css">
+<script src="login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+	<script>
+		function password_checking(){
+			const p1 = document.getElementById("ps1").value
+			const p2 = document.getElementById("ps2").value
+			let p3 = document.getElementById("p").value
+			let ma = document.getElementById("mail")
+            let c = 0;
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(ma.value)){
+                c = c + 1;
+            }
+			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(ma.value) != true){
+                alert("Enter a valid E-mail address.")
+                return (false)
+            }
+			if(p1 != p2){
+				alert("Password and Confirm pass word are different")
+				return (false)
+			}
+			if(p3.length != 10){
+				alert("Please Enter a valid number")
+				return (false)
+			}
+			if(p1 == p2){
+				c = c + 1;
+			}
+			if(p3.length == 10){
+				c = c + 1;
+			}
+			if(c == 3){
+				return (true)
+			}
+			
+
+
+
+
+		}
+	</script>
+	<header>
+		<h3 class="logo" >AUTOELITES</h3>
+		<nav class="navigation">
+			<a href="starting.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="service.html">Services</a>
+			<a href="contact.html">Contact</a>
+			<a href="login.html"><button class="btnLogin-popup">Login</button></a>
+		</nav>
+	</header>
+<div class="wrapper-registration">
+<div class="form-box register">
+			<h2>Registration</h2>
+			<form action="regestration-insert.jsp" onsubmit="return password_checking()" method = "GET">
+				<div class="input-box">
+					<span class="icon"><ion-icon name="person"></ion-icon></span>
+					<input type="text" name = "un"required>
+					<label>Username</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="mail"></ion-icon></span>
+					<input type="email" id = "mail" name = "em" required>
+					<label>Email</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="call"></ion-icon></span>
+					<input type="number" id = "p" name = "ph" required>
+					<label>Phone</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+					<input type="password" id = "ps1" name="ps" required>
+					<label>Set Password</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+					<input type="password" id = "ps2" required>
+					<label>Confirm Password</label>
+				</div>
+				<div class="agree">
+					<label><input type="checkbox" required> I agree to the terms & conditions</label>
+				</div>
+				<button type="submit" class="btn">Register </button>
+				<div class="login-register">
+				<p>Already have an account?<a href="D:\AUTOELITES\login.html" class="register-link">Login</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+			
